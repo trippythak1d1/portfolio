@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logotip">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <a href="#">Акции</a>
+                <a href="#">Поиск</a>
+                <a href="#">Регистрация на рейс</a>
+                <a href="#">Личный кабинет</a>
+            </nav>
+        </header>
+    <section id="booking-ticket"> 
+        <div class="container">
+        <h2 >Чем больше попутчиков, тем дешевле перелет!</h2>
+        <p >Наша уникальная система позволяет снизить стоимость билета по мере заполнения самолета</p>
+        <div class="calculator">
+        <div class="calculator-inputs">
+            <div class="input-group">
+                <label for="flight-date">Дата перелета</label>
+                <input type="date" id="flight-date" class="date-input">
+            </div>
+            <div class="input-group">
+                <label for="passengers-count">Количество бронирований</label>
+                <div class="slider-container">
+                    <input type="range" id="passengers-count" class="passengers-slider" 
+                            min="1" max="60" value="1">
+                    <div class="slider-labels">
+                        <span>1</span>
+                        <span>30</span>
+                        <span>60</span>
+                    </div>
+                </div>
+                <div class="passengers-display">Выбрано: <span id="passengers-value">1</span> пассажиров</div>
+            </div>
+        </div>
+        <div class="calculator-results">
+            <div class="result-item">
+                <div class="result-label">Заполненность рейса</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="fillness-progress"></div>
+                    <span class="progress-text" id="fillness-text">2%</span>
+                </div>
+            </div>
+            <div class="result-item">
+                <div class="result-label">Стоимость билета</div>
+                <div class="price-display">
+                    <span class="old-price" id="old-price">10 000 ₽</span>
+                    <span class="current-price" id="current-price">9 800 ₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infographic-note">
+        <p>✈️ Рейс гарантированно вылетает при заполнении на 50% и более</p>
+    </div>
+    </div>
+    </section>
+        <section id="trust-company">
+            <div class="trust-block">
+                <h1>Надёжный сервис для покупки авиабилетов</h1>
+                <div class="trust-content">
+                    <div class="trust-text">
+                        <div class="content">
+                            <img class="change" src="image/arrow-repeat 1.svg" alt="">
+                            <h2>Обмен билета онлайн</h2>
+                            <p>Удобное онлайн-управление бронированием
+Вы можете самостоятельно и быстро изменить параметры своего рейса через личный кабинет на нашем сайте или в мобильном приложении.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="second trust-text">
+                        <div class="content">
+                            <img src="image/airport.svg" alt="">
+                            <h2>Аэроэкспресс</h2>
+                            <p>Планируйте поездку заранее для максимального комфорта
+Чтобы ваше путешествие началось без стресса</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third trust-text">
+                    <div class="content third">
+                        <img class="bar-fill" src="image/bar-chart-line-fill 1.svg" alt="">
+                        <h2>Выгодные страховки</h2>
+                        <p>Обеспечьте себе финансовую защиту и спокойствие
+В путешествии могут возникнуть непредвиденные обстоятельства. Мы настоятельно советуем оформить комплексную страховку для путешественников</p>
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </main>
+</body>
+</html>
+
+
