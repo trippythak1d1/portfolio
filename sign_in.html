@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="sign_in_style.css">
+</head>
+<body>
+    <header>
+            <div class="logotip">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <a href="#">Акции</a>
+                <a href="#">Поиск</a>
+                <a href="#">Регистрация на рейс</a>
+                <a href="sign_in.html">Личный кабинет</a>
+            </nav>
+        </header>
+        <main>
+            <div class="sign_in_block">
+                <label for="name">Имя
+                    <input type="text" placeholder="Иван" required>
+                </label>
+                <label for="surname">Фамилия
+                    <input type="text" placeholder="Иванов" required>
+                </label>
+                <label for="passport_data">Данные паспорта
+                    <input type="number" placeholder="00 00 000000" required>
+                </label>
+                <label for="phone_number">Номер телефона
+                    <input type="tel" value="+7 " required>
+                </label>
+                <label for="password">Пароль
+                    <input type="password" name="#" id="#" required>
+                </label>
+                <label for="password_confirmation">Повторите пароль
+                    <input type="password" name="#" id="#" required>
+                </label>
+                <label for="personal_data_processing" class="pdp">
+                    <input type="checkbox" id="personal_data_processing" checked required>
+                    <h3>Соглашаюсь на обработку персональных данных</h3>
+                </label>
+                <button>Газ</button>
+            </div>
+        </main>
+</body>
+</html>

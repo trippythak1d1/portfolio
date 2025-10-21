@@ -1,0 +1,117 @@
+body { 
+    margin: 0;
+}
+
+@font-face { 
+    font-family: 'Faberge';
+    src: url(font/Faberge-Regular.otf);
+}
+
+/* header */
+
+header { 
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logotip img {
+    object-fit: cover; 
+    width: 120px;
+    height: auto;
+}
+
+nav { 
+    display: flex;
+    gap: 15px;
+}
+
+nav a { 
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+/* main */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main {
+    /* v поменять v */
+    width: 100%;
+    height: 1000px; 
+    /* ^ поменять ^ */
+    background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding-top: 24px;
+}
+
+.sign_in_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+label {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+input[type=text], 
+input[type=number], 
+input[type=tel], 
+input[type=password] {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 48px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+input::placeholder {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+input::content {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.pdp {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+h3 {
+    margin: 0;
+}
