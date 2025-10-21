@@ -1,6 +1,5 @@
 body { 
     margin: 0;
-
 }
 
 @font-face { 
@@ -17,13 +16,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     background-color: #fff;
-    /* width: 100%; */
-    /* padding: 0 240px; */
 }
-
-/* .logotip { 
-    width: 10%;
-} */
 
 .logotip img {
     object-fit: cover; 
@@ -46,9 +39,6 @@ nav a {
 
 /* section */
 
-/* main { 
-      
-} */
 #booking-ticket { 
     background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: grid;
@@ -90,7 +80,6 @@ nav a {
     opacity: 0.6;
 }
 
-
 .calculator { 
     max-width: 800px;
     margin: 0 auto;
@@ -125,7 +114,6 @@ nav a {
     border-radius: 10px;
     font-size: 1rem;
 }
-
 
 .passengers-slider {
     width: 100%;
@@ -233,19 +221,19 @@ nav a {
     color: #4ecdc4;
 }
 
-
 #trust-company { 
     display: grid;
     justify-content: center;
-    height: 77vh;
+    height: auto;
+    padding: 12px 0;
 }
 
 .trust-block { 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     width: 58.333vw;
+    gap: 22px;
 }
 
 .trust-block h1 { 
@@ -273,6 +261,7 @@ nav a {
 .second { 
     background-color: #3b47ad;
 }
+
 .content {
     position: relative; 
     width: 400px;
@@ -282,6 +271,7 @@ nav a {
     justify-content: space-between;
     gap: 12px;
 }
+
 .trust-content { 
     display: flex;
     align-items: center;
@@ -294,10 +284,12 @@ nav a {
     position: absolute;
     width: 200px;
 }
+
 .change { 
     height: 70%;
     top: 40%;
 }
+
 .bar-fill { 
     height: 120%;
     left: 70%;
@@ -339,3 +331,71 @@ button:hover {
     transition: 300ms ease-in;
 }
 
+#form-search { 
+    display: grid;
+    justify-content: center;
+    height: auto;
+    background:  linear-gradient(-40deg, #667eea 0%, #764ba2 100%);
+    padding: 12px 12px;
+    gap: 22px;
+}
+
+#form-search h1 { 
+    text-align: center;
+    font-family: "Faberge";
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.search-block { 
+    display: flex;
+    gap: 24px;
+}
+.search-block h2 { 
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+form { 
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.travel-city { 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+input[type=text], input[type=date]{ 
+    height: 48px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+.travel-date {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

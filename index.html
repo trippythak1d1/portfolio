@@ -102,9 +102,44 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <section id="form-search">
+            <h1>Поиск билетов</h1>
+            <form action="">
+                <div class="search-block">
+                    <div class="travel-city">
+                        <h2>Выберите города</h2>
+                        <input type="text" required placeholder="Откуда">
+                        <input type="text" required placeholder="Куда">
+                    </div>
+                    <div class="travel-date">
+                        <h2>Выберите даты</h2>
+                        <input type="date" required placeholder="Дата вылета туда">
+                        <input type="date" required placeholder="Дата вылета Обратно">
+                    </div>
+                <div class="slider-container">
+                    <h2>Выберите количество пассажиров</h2>
+                    <input class="passengers-slider" type="range" id="ageSlider" value="0" min="0" max="8">
+                    <div class="slider-labels">
+                        <span>1</span>
+                        <span>5</span>
+                        <span>8</span>
+                    </div>
+                    <span id="ageDisplay">0</span>
+                </div>
+            </div>
+            <button type="submit">Найти</button>
+            </form>
+        </section>
     </main>
+
+
+            <script>
+    const ageSlider = document.getElementById('ageSlider');
+  const ageDisplay = document.getElementById('ageDisplay');
+
+  ageSlider.addEventListener('input', function() {
+    ageDisplay.textContent = this.value;
+  });
+</script>
 </body>
 </html>
-
-
