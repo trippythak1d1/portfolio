@@ -399,3 +399,34 @@ input[type=text], input[type=date]{
     flex-direction: column;
     gap: 12px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 12px 0 12px 0;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer_right {
+    display: grid;
+    gap: 12px;
+}
+
+h3 {
+    font-family: "Faberge", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
