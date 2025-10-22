@@ -693,7 +693,6 @@ footer {
 .footer-content {
     width: 60%;
     display: flex;
-    justify-content: space-between;
     background: rgba(88, 88, 88, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 20px;
