@@ -548,20 +548,6 @@ input[type=text], input[type=date]{
     gap: 12px;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 12px 0 12px 0;
-}
-
-.footer_left {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    opacity: 0.7;
-}
 
 #event-block { 
     display: grid;
@@ -679,9 +665,10 @@ input[type=email] {
 /* footer */
 
 footer {
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding: 12px 0;
 }
 
@@ -693,6 +680,7 @@ footer {
 .footer-content {
     width: 60%;
     display: flex;
+    justify-content: space-between;
     background: rgba(88, 88, 88, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -717,6 +705,8 @@ footer a {
     font-family: "Manrope", sans-serif;
     text-decoration: none;
     color: black;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0;
 }
 
