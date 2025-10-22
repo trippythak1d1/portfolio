@@ -113,8 +113,8 @@ nav a:hover {
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.3);
     outline: none;
-    -webkit-appearance: none;
-}a
+}
+
 
 .passengers-slider::-webkit-slider-thumb {
     -webkit-appearance: none;

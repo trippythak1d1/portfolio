@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="booking-style.css">
+</head>
+<body>
+     <header>
+        <div class="logotip">
+            <a href="index.html">
+                <img src="image/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <a href="#">Акции</a>
+            <a href="search.html">Поиск</a>
+            <a href="booking.html">Регистрация на рейс</a>
+            <a href="profile.html">Личный кабинет</a>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+        <div class="booking-steps">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-label">Выбор рейса</div>
+            </div>
+            <div class="step active">
+                <div class="step-number">2</div>
+                <div class="step-label">Данные пассажиров</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Подтверждение</div>
+            </div>
+        </div>
+        <section class="flight-summary">
+            <h2 class="summary-title">Выбранные рейсы</h2>
+            <div class="flight-cards">
+                <div class="flight-card">
+                    <div class="route">
+                        <div class="city">Москва</div>
+                        <div class="time">08:00</div>
+                        <div class="date">15 декабря 2024</div>
+                        <div class="airport">Аэропорт Шереметьево</div>
+                    </div>
+                    <div class="duration">
+                        <div class="duration-time">1ч 30м</div>
+                        <div class="duration-line">
+                            <div class="line"></div>
+                            ✈️
+                            <div class="line"></div>
+                        </div>
+                        <div class="flight-number">IF701</div>
+                    </div>
+                    <div class="route">
+                        <div class="city">Санкт-Петербург</div>
+                        <div class="time">09:30</div>
+                        <div class="date">15 декабря 2024</div>
+                        <div class="airport">Аэропорт Пулково</div>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="route">
+                        <div class="city">Санкт-Петербург</div>
+                        <div class="time">14:20</div>
+                        <div class="date">20 декабря 2024</div>
+                        <div class="airport">Аэропорт Пулково</div>
+                    </div>
+                    <div class="duration">
+                        <div class="duration-time">1ч 30м</div>
+                        <div class="duration-line">
+                            <div class="line"></div>
+                            ✈️
+                            <div class="line"></div>
+                        </div>
+                        <div class="flight-number">IF705</div>
+                    </div>
+                    <div class="route">
+                        <div class="city">Москва</div>
+                        <div class="time">15:50</div>
+                        <div class="date">20 декабря 2024</div>
+                        <div class="airport">Аэропорт Шереметьево</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="passenger-form">
+            <h2 class="form-title">Данные пассажиров</h2>
+            <div class="passenger-section">
+                <div class="passenger-header">
+                    <h3 class="passenger-title">Пассажир 1 (Взрослый)</h3>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="passenger1-firstname">Имя *</label>
+                        <input type="text" id="passenger1-firstname" name="passenger1-firstname" required placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger1-lastname">Фамилия *</label>
+                        <input type="text" id="passenger1-lastname" name="passenger1-lastname" required placeholder="Введите фамилию">
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger1-birthdate">Дата рождения *</label>
+                        <input type="date" id="passenger1-birthdate" name="passenger1-birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger1-document">Номер документа *</label>
+                        <input type="text" id="passenger1-document" name="passenger1-document" required placeholder="Серия и номер паспорта">
+                    </div>
+                </div>
+            </div>
+            <div class="passenger-section">
+                <div class="passenger-header">
+                    <h3 class="passenger-title">Пассажир 2 (Взрослый)</h3>
+                    <button type="button" class="remove-passenger">Удалить</button>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="passenger1-firstname">Имя *</label>
+                        <input type="text" id="passenger2-firstname" name="passenger2-firstname" required placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger1-lastname">Фамилия *</label>
+                        <input type="text" id="passenger2-lastname" name="passenger2-lastname" required placeholder="Введите фамилию">
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger1-birthdate">Дата рождения *</label>
+                        <input type="date" id="passenger2-birthdate" name="passenger2-birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passenger1-document">Номер документа *</label>
+                        <input type="text" id="passenger2-document" name="passenger2-document" required placeholder="Серия и номер паспорта">
+                    </div>
+                </div>
+            </div>
+            <div class="add-passenger">
+                <button type="button" class="add-passenger-btn">
+                    + Добавить пассажира
+                </button>
+            </div>
+        </section>
+        <section class="price-summary">
+            <h2 class="price-title">Стоимость бронирования</h2>
+            <div class="price-details">
+                <div class="price-item">
+                    <span class="price-label">Пассажир 1 (Москва → СПб)</span>
+                    <span class="price-value">4 500 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">Пассажир 1 (СПб → Москва)</span>
+                    <span class="price-value">5 500 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">Пассажир 2 (Москва → СПб)</span>
+                    <span class="price-value">4 500 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">Пассажир 2 (СПб → Москва)</span>
+                    <span class="price-value">5 500 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">Сбор за бронирование</span>
+                    <span class="price-value">300 ₽</span>
+                </div>
+            </div>
+            <div class="total-price">
+                <span class="total-label">Итого к оплате:</span>
+                <span class="total-value">20 300 ₽</span>
+            </div>
+        </section>
+        <section class="booking-actions">
+            <a href="search.html" class="back-button">← Назад к поиску</a>
+            <a href="booking_management.html" class="book-button">Оформить бронирование</a>
+        </section>
+    </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer_left">
+                <h3>Телефон</h3>
+                <a href="#">8 (800) 100-10-10</a>
+            </div>
+            <div class="footer_right">
+                <h3>Навигация по сайту</h3>
+                <a href="index.html">Главная</a>
+                <a href="login.html">Вход</a>
+                <a href="register.html">Регистрация</a>
+                <a href="#">Контакты</a>
+                <a href="#">Новости</a>
+                <a href="index.html">Вернуться</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <link rel="stylesheet" href="search-style.css">
+</head>
+<body>
+    <header>
+        <div class="logotip">
+            <a href="index.html">
+                <img src="image/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <a href="#">Акции</a>
+            <a href="search.html">Поиск</a>
+            <a href="booking.html">Регистрация на рейс</a>
+            <a href="profile.html">Личный кабинет</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search-filters">
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="sort">Сортировка</label>
+                        <select id="sort" class="filter-select">
+                            <option value="price">По цене (сначала дешевые)</option>
+                            <option value="time">По времени вылета</option>
+                            <option value="probability">По вероятности вылета</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="time">Время вылета</label>
+                        <select id="time" class="filter-select">
+                            <option value="all">Любое время</option>
+                            <option value="morning">Утро (06:00-12:00)</option>
+                            <option value="day">День (12:00-18:00)</option>
+                            <option value="evening">Вечер (18:00-24:00)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="probability">Вероятность вылета</label>
+                        <select id="probability" class="filter-select">
+                            <option value="all">Любая</option>
+                            <option value="high">Высокая (75%+)</option>
+                            <option value="medium">Средняя (50%+)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="results-header">
+                <div class="results-count">Найдено 5 рейсов</div>
+                <div class="sort-options">
+                    <button class="sort-btn">По цене</button>
+                    <button class="sort-btn">По времени</button>
+                    <button class="sort-btn">По вероятности</button>
+                </div>
+            </div>
+            <div class="flight-results">
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">IF701</div>
+                        <div class="flight-aircraft">Bombardier CRJ200</div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="route">
+                            <div class="city">Москва</div>
+                            <div class="time">08:00</div>
+                            <div class="date">15 декабря</div>
+                            <div class="airport">Шереметьево</div>
+                        </div>
+                        <div class="duration">
+                            <div class="duration-time">1ч 30м</div>
+                            <div class="duration-line">
+                                <div class="line"></div>
+                                ✈️
+                                <div class="line"></div>
+                            </div>
+                            <div class="flight-type">Прямой рейс</div>
+                        </div>
+                        <div class="route">
+                            <div class="city">Санкт-Петербург</div>
+                            <div class="time">09:30</div>
+                            <div class="date">15 декабря</div>
+                            <div class="airport">Пулково</div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price-section">
+                            <div class="price">4 500 ₽</div>
+                            <div class="price-per-person">за пассажира</div>
+                        </div>
+                        <div class="probability-section">
+                            <div class="probability-info">
+                                <div class="probability-label">Вероятность вылета</div>
+                                <div class="probability-value">85%</div>
+                                <div class="passengers-count">45/60 мест</div>
+                            </div>
+                            <div class="probability-bar">
+                                <div class="probability-fill probability-high" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <a href="booking.html" class="book-button">Выбрать</a>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">IF702</div>
+                        <div class="flight-aircraft">Bombardier CRJ200</div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="route">
+                            <div class="city">Москва</div>
+                            <div class="time">12:30</div>
+                            <div class="date">15 декабря</div>
+                            <div class="airport">Шереметьево</div>
+                        </div>
+                        <div class="duration">
+                            <div class="duration-time">1ч 30м</div>
+                            <div class="duration-line">
+                                <div class="line"></div>
+                                ✈️
+                                <div class="line"></div>
+                            </div>
+                            <div class="flight-type">Прямой рейс</div>
+                        </div>
+                        <div class="route">
+                            <div class="city">Санкт-Петербург</div>
+                            <div class="time">14:00</div>
+                            <div class="date">15 декабря</div>
+                            <div class="airport">Пулково</div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price-section">
+                            <div class="price">5 200 ₽</div>
+                            <div class="price-per-person">за пассажира</div>
+                        </div>
+                        <div class="probability-section">
+                            <div class="probability-info">
+                                <div class="probability-label">Вероятность вылета</div>
+                                <div class="probability-value">60%</div>
+                                <div class="passengers-count">32/60 мест</div>
+                            </div>
+                            <div class="probability-bar">
+                                <div class="probability-fill probability-medium" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <a href="booking.html" class="book-button">Выбрать</a>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">IF703</div>
+                        <div class="flight-aircraft">Bombardier CRJ200</div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="route">
+                            <div class="city">Москва</div>
+                            <div class="time">18:45</div>
+                            <div class="date">15 декабря</div>
+                            <div class="airport">Шереметьево</div>
+                        </div>
+                        <div class="duration">
+                            <div class="duration-time">1ч 30м</div>
+                            <div class="duration-line">
+                                <div class="line"></div>
+                                ✈️
+                                <div class="line"></div>
+                            </div>
+                            <div class="flight-type">Прямой рейс</div>
+                        </div>
+                        <div class="route">
+                            <div class="city">Санкт-Петербург</div>
+                            <div class="time">20:15</div>
+                            <div class="date">15 декабря</div>
+                            <div class="airport">Пулково</div>
+                        </div>
+                    </div>
+                    <div class="flight-footer">
+                        <div class="price-section">
+                            <div class="price">3 800 ₽</div>
+                            <div class="price-per-person">за пассажира</div>
+                        </div>
+                        <div class="probability-section">
+                            <div class="probability-info">
+                                <div class="probability-label">Вероятность вылета</div>
+                                <div class="probability-value">45%</div>
+                                <div class="passengers-count">25/60 мест</div>
+                            </div>
+                            <div class="probability-bar">
+                                <div class="probability-fill probability-low" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <a href="booking.html" class="book-button">Выбрать</a>
+                    </div>
+                </div>
+        </div>
+        <div class="selection-notice">
+            <h3 class="notice-title">Как выбрать рейсы?</h3>
+            <p class="notice-text">
+                Выберите рейс "туда" и при необходимости рейс "обратно", нажав кнопку "Выбрать". 
+                Вы будете перенаправлены на страницу бронирования для ввода данных пассажиров.
+            </p>
+            <p class="notice-text">
+                <strong>Вероятность вылета</strong> рассчитывается на основе заполненности рейса. 
+                Рейс гарантированно вылетает при заполнении на 50% и более.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer_left">
+                <h3>Телефон</h3>
+                <a href="#">8 (800) 100-10-10</a>
+            </div>
+            <div class="footer_right">
+                <h3>Навигация по сайту</h3>
+                <a href="index.html">Главная</a>
+                <a href="login.html">Вход</a>
+                <a href="register.html">Регистрация</a>
+                <a href="#">Контакты</a>
+                <a href="#">Новости</a>
+                <a href="index.html">Вернуться</a>
+        </div>
+    </div>
+</footer>
+</html>
