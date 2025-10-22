@@ -296,7 +296,7 @@ nav a:hover {
     background: rgba(78, 205, 196, 0.3);
     font-family: "Manrope", sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -310,8 +310,6 @@ nav a:hover {
 
 #trust-company { 
     display: grid;
-    justify-content: center;
-    height: auto;
     padding: 12px 0;
 }
 
@@ -319,7 +317,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 58.333vw;
     gap: 22px;
 }
 
@@ -340,13 +337,6 @@ nav a:hover {
     background-color: #ff4169;
     border-radius: 12px;
     padding: 22px 22px;
-}
-.third { 
-    background-color: #aa5aff;
-}
-
-.second { 
-    background-color: #3b47ad;
 }
 
 .content {
@@ -514,4 +504,167 @@ input[type=text], input[type=date]{
     margin-top: 0.5rem;
     font-size: 0.8rem;
     opacity: 0.7;
+}
+
+#event-block { 
+    display: grid;
+    padding: 12px 12px;
+    gap: 22px;
+    height: auto;
+    justify-items: center;
+}
+
+#event-block h1 { 
+    text-align: center;
+    font-family: "Faberge";
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+.container-event { 
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slider-event {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.card-event { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #ff4169;
+    border-radius: 20px;
+    padding: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.event-description { 
+    display: grid;
+    gap: 12px;
+}
+.event-description h2 { 
+    font-family: "Faberge";
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+.event-description p { 
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+.card-event img { 
+    width: 100%;
+    height: 40%;
+    border-radius: 12px;
+}
+.third { 
+    background-color: #aa5aff;
+}
+
+.second { 
+    background-color: #3b47ad;
+}
+.fourth { 
+    background-color: #ff6524;
+}
+
+.right { 
+    display: flex;
+    width: 329.484px;
+    height: auto;
+}
+
+
+#form-login { 
+    display: grid;
+    justify-content: center;
+    height: auto;
+    background: linear-gradient(-40deg, #667eea 0%, #764ba2 100%);
+    padding: 12px 12px;
+    gap: 22px;
+}
+#form-login h1 { 
+    text-align: center;
+    font-family: "Faberge";
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+}
+
+input[type=email] {
+    padding-left: 10px;
+    border-radius: 10px; 
+    width: 220px;
+    height: 45px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(88, 88, 88, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer_right {
+    display: grid;
+    gap: 12px;
+}
+
+h3 {
+    font-family: "Faberge", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: black;
+}
+
+/* переделать */
+footer a {
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+footer a:hover { 
+    transition: 280ms ease-out;
+    color: #ff4169;
 }
