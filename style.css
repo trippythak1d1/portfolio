@@ -71,7 +71,7 @@ nav a:hover {
 }
 .container p { 
     text-align: center;
-    font-family: "Faberge";
+    font-family: "Faberge", sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #fff;
@@ -81,7 +81,7 @@ nav a:hover {
 
 .container h2 { 
     text-align: center;
-    font-family: 'Faberge';
+    font-family: 'Faberge', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -92,10 +92,77 @@ nav a:hover {
     display: grid;
     gap: 12px;
 }
-.infographic-section {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.date-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.passengers-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    -webkit-appearance: none;
+}a
+
+.passengers-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff4169;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.passengers-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    background: #ff4169;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.passengers-display {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.calculator-results {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.result-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
     position: relative;
     overflow: hidden;
 }
@@ -201,7 +268,7 @@ nav a:hover {
 .step-title {
     font-size: 1.8rem;
     color: #4ecdc4;
-    font-family: "Manrope";
+    font-family: "Manrope", sans-serif;
     font-size: 24px;
     font-weight: 700;
     margin: 0;
@@ -321,7 +388,7 @@ nav a:hover {
 }
 
 .trust-block h1 { 
-    font-family: 'Faberge';
+    font-family: 'Faberge', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -419,7 +486,7 @@ button:hover {
 
 #form-search h1 { 
     text-align: center;
-    font-family: "Faberge";
+    font-family: "Faberge", sans-serif;
     font-size: 32px;
     font-weight: 400;
     color: #fff;
@@ -480,25 +547,15 @@ input[type=text], input[type=date]{
     flex-direction: column;
     gap: 12px;
 }
-.passengers-slider {
-    width: 100%;
-    height: 6px;
-    border-radius: 3px;
-    background: rgba(255, 255, 255, 0.3);
-    outline: none;
-    -webkit-appearance: none;
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 12px 0 12px 0;
 }
 
-.passengers-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #ff6b6b;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.slider-labels {
+.footer_left {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
